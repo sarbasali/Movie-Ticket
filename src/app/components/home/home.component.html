@@ -1,0 +1,28 @@
+<div class="flex flex-col  overflow-x-hidden bg-slate-200 relative top-0 w-screen h-screen sm:w-screen md:w-screen lg:w-screen">
+
+    <div class="flex flex-row bg-slate-800 w-full h-[90px] gap-8 justify-between pl-4 pr-3 items-center sm:col-start-1 md:col-start-3  lg:col-start-5 sm:w-screen md:w-screen lg:w-screen">
+        <img src="../../../assets/linkedin_banner_image_1.png" alt="" class="w-[100px] rounded-lg md:w-[150px] md:h-[60px] sm:w-[100px]  sm:h-[60px] lg:h-[65px] lg:w-[150px]" loading="lazy">
+        <input type="text" placeholder="search your movie" class="w-[200px] h-[40px] bg-white rounded-md pl-10  sm:w-[500px] md:w-[500px] lg:w-[600px]">
+        <button class="w-[120px] h-[40px] bg-red-500 rounded-md ">sign in</button>
+    </div>
+    <h1 class="font-bold text-3xl ml-14 pt-10">Now Showing</h1>
+    <div class=" grid grid-flow-col gap-10  overflow-x-scroll snap-proximity mr-10 ml-[20px] pl-8 snap-x pr-[20px] relative top-[100px] sm:mr-10 md:mr-9 lg:left-4">
+        
+        <div *ngFor="let i of sortArray" class="">
+            <div  class=" snap-center w-[300px] h-[950px] rounded-xl object-cover sm:w-[300px] md:w-[500px] lg:w-[300px]   " >
+                <img routerLink="/details" src= {{img}}{{i.poster_path}} alt=`{{img}}{{i.poster_path}}` (click)="nextcomp(i.id)" class="h-[400px] w-[300px] md:w-[500px] md:h-[300px]  lg:w-[300px] lg:h-[400px]  rounded-xl object-fill">
+                <p class="font-medium text-xl pl-4 mt-5">{{i.original_title}}</p>
+                <!-- <button routerLink="/details"  class="w-[100px] h-[50px] bg-black text-white">Details</button>  -->
+
+            </div>
+
+
+           
+           
+              
+
+        </div> 
+    </div>
+</div>
+<!-- <app-movie-details></app-movie-details> -->
+<!-- <router-outlet></router-outlet> -->

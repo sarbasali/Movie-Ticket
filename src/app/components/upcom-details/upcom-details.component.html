@@ -1,0 +1,21 @@
+<div class="flex flex-col w-screen h-screen bg-slate-800 ">
+    <div class="flex flex-col  pt-4">
+        <img src="{{img}}{{upcom.backdrop_path}}" alt="" class="hidden w-[1400px] h-[680px] relative blur-sm top-[20px] left-[500px] md:block md:w-[650px] md:h-[400px] md:left-[330px] lg:w-[1400px] lg:h-[650px] lg:left-[450px]">
+        <img src="{{img}}{{upcom.poster_path}} " alt="" class="w-[250px] h-[350px] absolute top-10 left-[100px] rounded-lg md:top-[60px] md:left-[50px] lg:w-[330px] lg:h-[400px] lg:top-[150px] object-fill">
+
+      <div class="flex flex-col absolute left-[50px] top-[450px] gap-6 md:left-[380px] md:top-[100px]  md:pr-12 lg:left-[600px] lg:top-[120px]">
+        <p class=" font-medium text-2xl text-white lg:text-4xl ">{{upcom.original_title}} </p>
+      
+        <p class="text-white text-lg pr-6 w-[400px]  md:absolute md:top-[400px] md:left-[-50px]  md:w-[700px] md:pr-10 lg:top-[150px] lg:left-0 lg:text-2xl lg:w-[800px] ">{{upcom.overview}}</p>
+        
+
+      </div>
+
+    
+    </div>
+    <button routerLink="/home" class="hidden w-[100px] h-10 rounded-lg bg-black text-white absolute top-[850px] left-[310px] lg:block lg:left-[900px]">home</button>
+       
+    
+
+</div>
+

@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SeatBookingComponent } from './components/seat-booking/seat-booking.component';
 import { LoginComponent } from './components/login/login.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { UpcomDetailsComponent } from './components/upcom-details/upcom-details.component';
 const routes: Routes = [
   {path:'',
 redirectTo:'/login',
@@ -14,7 +15,8 @@ pathMatch:'full'
   {path:"home" , component:HomeComponent},
   {path:"details" , component:MovieDetailsComponent},
   {path:"seat",component:SeatBookingComponent},
-  {path:'payment' , component:PaymentComponent}
+  {path:'payment' , component:PaymentComponent},
+  {path:'updetails',component:UpcomDetailsComponent}
 
 ];
 

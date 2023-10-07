@@ -12,6 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { SeatBookingComponent } from './components/seat-booking/seat-booking.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { UpcomDetailsComponent } from './components/upcom-details/upcom-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PaymentComponent } from './components/payment/payment.component';
     MovieDetailsComponent,
     SeatBookingComponent,
     PaymentComponent,
+    UpcomDetailsComponent,
   ],
   imports: [
     BrowserModule,

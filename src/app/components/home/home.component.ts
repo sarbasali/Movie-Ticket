@@ -15,6 +15,7 @@ export class HomeComponent {
   img:any="https://image.tmdb.org/t/p/original"
   postArray:any
 sortArray:any
+upcomming:any
   ngOnInit(){
     this.service.getPost().subscribe((res)=>{
       this.postArray=res
@@ -24,9 +25,17 @@ sortArray:any
 
     console.log(this.sortArray);
     
+    this.upcomming=this.postArray.results.slice(5,10)
       
     })
 
+   
+  }
+  sentclickedm(clickedUpMov:any){
+    console.log(clickedUpMov);
+    
+   this.service.idee=clickedUpMov
+   console.log(this.service.idee);
    
   }
   nextcomp(id:any){
